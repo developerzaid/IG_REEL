@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/color1">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilepic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profilepic"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="IG EASY REEL SAVER"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:text="Download and Save IG Reels"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp" />
+
+    <View
+        style="@style/line"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/username">
+    </View>
+
+</LinearLayout>

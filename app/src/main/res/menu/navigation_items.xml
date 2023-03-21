@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group >
+
+        <item
+           android:icon="@drawable/baseline_arrow_downward_24"
+            android:id="@+id/nav_recentdown"
+
+            android:title="RECENT DOWNLOADS"
+            />
+
+        <item
+            android:icon="@drawable/baseline_remove_red_eye_24"
+            android:id="@+id/nav_whatsdel"
+
+            android:title="WA DELETED MESSAGE SAVER"
+            app:showAsAction="always"
+            />
+        <item
+            android:icon="@drawable/baseline_history_toggle_off_24"
+            android:id="@+id/nav_whatsstory"
+
+            android:title="WHATSAPP STORY SAVER"
+            app:showAsAction="always"
+            />
+
+
+    <item
+        android:icon="@drawable/baseline_apps_24"
+        android:id="@+id/nav_moreapp"
+        android:title="MORE APPS"
+
+        app:showAsAction="always" />
+
+    <item
+        android:icon="@drawable/baseline_person_24"
+        android:id="@+id/nav_contact"
+
+        android:title="CONTACT US"
+        />
+
+    <item
+        android:icon="@drawable/baseline_security_24"
+        android:id="@+id/nav_privacy"
+
+        android:title="PRIVACY POLICY"
+        />
+
+    </group>
+</menu>
