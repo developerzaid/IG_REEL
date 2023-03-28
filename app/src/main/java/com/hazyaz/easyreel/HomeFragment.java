@@ -1,4 +1,4 @@
-package com.example.easyreel;
+package com.hazyaz.easyreel;
 
 import android.app.DownloadManager;
 import android.content.Context;
@@ -18,6 +18,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.MediaController;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 import android.widget.VideoView;
 
@@ -28,7 +29,6 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
 import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
@@ -70,6 +70,7 @@ public class HomeFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private ProgressBar spinner;
 
 
     public HomeFragment() {
@@ -130,9 +131,11 @@ public class HomeFragment extends Fragment {
         getphoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AdRequest adRequest = new AdRequest.Builder().build();
 
-                InterstitialAd.load(getContext(),"ca-app-pub-3940256099942544/1033173712", adRequest,
+
+
+                AdRequest adRequest = new AdRequest.Builder().build();
+                InterstitialAd.load(getContext(),"ca-app-pub-2675887677224394/3455510144", adRequest,
                         new InterstitialAdLoadCallback() {
                             @Override
                             public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
@@ -150,6 +153,7 @@ public class HomeFragment extends Fragment {
                                 mInterstitialAd = null;
                             }
                         });
+
                 URL=getphotolink.getText().toString().trim();
                 if(URL.equals(""))
                 {
@@ -161,12 +165,14 @@ public class HomeFragment extends Fragment {
                         mparticularreel.setVisibility(View.INVISIBLE);
                         mparticularphoto.setVisibility(View.VISIBLE);
                         emptyImage.setVisibility(View.INVISIBLE);
+
                         cnt=0;
                     }
                     else{
                         mparticularphoto.setVisibility(View.INVISIBLE);
                         mparticularreel.setVisibility(View.VISIBLE);
                         emptyImage.setVisibility(View.INVISIBLE);
+
 
                         cnt=1;
                     }

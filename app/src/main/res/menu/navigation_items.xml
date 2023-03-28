@@ -14,21 +14,6 @@
             android:title="RECENT DOWNLOADS"
             />
 
-        <item
-            android:icon="@drawable/baseline_remove_red_eye_24"
-            android:id="@+id/nav_whatsdel"
-
-            android:title="WA DELETED MESSAGE SAVER"
-            app:showAsAction="always"
-            />
-        <item
-            android:icon="@drawable/baseline_history_toggle_off_24"
-            android:id="@+id/nav_whatsstory"
-
-            android:title="WHATSAPP STORY SAVER"
-            app:showAsAction="always"
-            />
-
 
     <item
         android:icon="@drawable/baseline_apps_24"
@@ -40,7 +25,6 @@
     <item
         android:icon="@drawable/baseline_person_24"
         android:id="@+id/nav_contact"
-
         android:title="CONTACT US"
         />
 

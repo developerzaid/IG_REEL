@@ -11,20 +11,15 @@
         android:layout_height="match_parent" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
         android:id="@+id/downbtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_below="@id/editText"
-        android:layout_marginStart="23dp"
-        android:layout_marginLeft="23dp"
-        android:layout_marginTop="640dp"
-        android:layout_marginEnd="23dp"
-        android:layout_marginRight="23dp"
-        android:layout_marginBottom="23dp"
-        android:background="@drawable/button_color"
-        android:text="Download"
+        android:background="@drawable/baseline_download_for_offline_24"
         android:textColor="#FFFFFF"
         android:textSize="17dp"
         android:textStyle="bold" />
-
 </FrameLayout>

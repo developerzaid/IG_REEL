@@ -1,4 +1,4 @@
-package com.example.easyreel;
+package com.hazyaz.easyreel;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -10,11 +10,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
@@ -75,11 +73,8 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://hazyaztechnologies.in/contact/")));
 
                 case R.id.nav_privacy:
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://hazyaztechnologies.in/")));
-                case R.id.nav_whatsdel:
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.hazyaz.whatsRemoved")));
-                case R.id.nav_whatsstory:
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.hazyaz.whatsstories")));
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://hazyaztechnologies.in/easy-reel-pp/")));
+
                 default:
                     return true;
             }

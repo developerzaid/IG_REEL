@@ -1,4 +1,4 @@
-package com.example.easyreel;
+package com.hazyaz.easyreel;
 
 import org.junit.Test;
 

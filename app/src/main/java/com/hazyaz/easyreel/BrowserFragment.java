@@ -1,4 +1,4 @@
-package com.example.easyreel;
+package com.hazyaz.easyreel;
 
 import static android.content.Context.DOWNLOAD_SERVICE;
 
@@ -9,7 +9,6 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -105,7 +104,6 @@ public class BrowserFragment extends Fragment implements View.OnTouchListener, H
 
         builder = new AlertDialog.Builder(getContext());
         builder.setMessage("Welcome") .setTitle("Alert");
-
         builder.setMessage("Long press on post that you want to download!!")
                 .setCancelable(false)
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
