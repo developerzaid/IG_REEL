@@ -1,4 +1,4 @@
-package com.hazyaz.easyreel;
+package com.hazyaz.reelsaver;
 
 import android.app.DownloadManager;
 import android.content.Context;
@@ -135,7 +135,7 @@ public class HomeFragment extends Fragment {
 
 
                 AdRequest adRequest = new AdRequest.Builder().build();
-                InterstitialAd.load(getContext(),"ca-app-pub-2675887677224394/3455510144", adRequest,
+                InterstitialAd.load(getContext(),"ca-app-pub-2675887677224394/2129805825", adRequest,
                         new InterstitialAdLoadCallback() {
                             @Override
                             public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {

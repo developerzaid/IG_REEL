@@ -7,12 +7,11 @@
 
     <group >
 
-        <item
-           android:icon="@drawable/baseline_arrow_downward_24"
-            android:id="@+id/nav_recentdown"
-
-            android:title="RECENT DOWNLOADS"
-            />
+<!--        <item-->
+<!--           android:icon="@drawable/baseline_arrow_downward_24"-->
+<!--            android:id="@+id/nav_recentdown"-->
+<!--            android:title="RECENT DOWNLOADS"-->
+<!--            />-->
 
 
     <item
@@ -29,7 +28,7 @@
         />
 
     <item
-        android:icon="@drawable/baseline_security_24"
+        android:icon="@drawable/baseline_arrow_downward_24"
         android:id="@+id/nav_privacy"
 
         android:title="PRIVACY POLICY"

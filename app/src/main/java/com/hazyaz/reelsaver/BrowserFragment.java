@@ -1,4 +1,4 @@
-package com.hazyaz.easyreel;
+package com.hazyaz.reelsaver;
 
 import static android.content.Context.DOWNLOAD_SERVICE;
 

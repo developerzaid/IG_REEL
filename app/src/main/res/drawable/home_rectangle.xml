@@ -10,10 +10,6 @@
 
     <group>
 
-        <clip-path
-            android:pathData="M0 0H179V63H0V0Z"
-            />
-
         <group
             android:translateX="0.028"
             android:translateY="-2.924"
@@ -38,7 +34,7 @@
                         >
 
                         <item
-                            android:color="#301569"
+                            android:color="#e51284"
                             android:offset="0"
                             />
 

@@ -1,4 +1,4 @@
-package com.hazyaz.easyreel;
+package com.hazyaz.reelsaver;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -23,6 +23,7 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -63,9 +64,9 @@ public class MainActivity extends AppCompatActivity {
             drawerLayout.closeDrawer(GravityCompat.START);
             switch (id)
             {
-                case R.id.nav_recentdown:
-                    Toast.makeText(MainActivity.this, "Recent Download is Clicked",Toast.LENGTH_SHORT).show();
-                    break;
+//                case R.id.nav_recentdown:
+//                    Toast.makeText(MainActivity.this, "Recent Download is Clicked",Toast.LENGTH_SHORT).show();
+//                    break;
                 case R.id.nav_moreapp:
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/dev?id=6415071648920776703"))    );
                     break;
@@ -73,7 +74,8 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://hazyaztechnologies.in/contact/")));
 
                 case R.id.nav_privacy:
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://hazyaztechnologies.in/easy-reel-pp/")));
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://hazyaztechnologies.in/easy-reel-pp/" +
+                            "")));
 
                 default:
                     return true;

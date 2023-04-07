@@ -1,4 +1,4 @@
-package com.hazyaz.easyreel;
+package com.hazyaz.reelsaver;
 
 public class ModelClass {
 

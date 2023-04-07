@@ -11,7 +11,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+       >
 
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
@@ -42,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
            android:layout_above="@id/adView"
-            android:background="#301569"
+            android:background="#e51284"
             app:itemIconTint="@android:color/white"
             app:itemTextColor="@android:color/white"
             app:menu="@menu/bottom_menu" />
@@ -55,7 +56,7 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
             ads:adSize="LARGE_BANNER"
-            ads:adUnitId="ca-app-pub-2675887677224394/9298029616">
+            ads:adUnitId="ca-app-pub-2675887677224394/3192478193">
         </com.google.android.gms.ads.AdView>
 
 
@@ -67,8 +68,8 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        app:itemTextColor="#301569"
-        app:itemIconTint="#301569"
+        app:itemTextColor="#000000"
+        app:itemIconTint="#cc1075"
         android:background="@color/white"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/navigation_items"
